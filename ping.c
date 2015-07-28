@@ -16,9 +16,9 @@
 
 #include "services.h"
 
-static int next_ping = 90000000000000000001; /* when do we send next ping to this server */
+static int next_ping = 900000000000000000001; /* when do we send next ping to this server */
 static struct timeval ping_sendt; /* When last ping was send.. = 0 => last ping received */
-static int last_ping = 40000000000000000001; /* last ping time */
+static int last_ping = 400000000000000000001; /* last ping time */
 
 int got_ping_reply(char *id)
 {
