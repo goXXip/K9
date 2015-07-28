@@ -98,7 +98,7 @@ void sighup_handler(int sig_unused)
 #ifdef CLEAN_COMPILE
     sig_unused = sig_unused;
 #endif
-    save_data = -2;
+    save_data = 1;
     signal(SIGHUP, SIG_IGN);
     log("Received SIGHUP, restarting.");
     if (!quitmsg)
