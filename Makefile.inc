@@ -7,9 +7,9 @@ LFLAGS=
 LIBS=-lnsl -lresolv
 
 PROGRAM=k9
-BINDEST=/home/sloth/k9/sbin
-DATDEST=/home/sloth/k9/data
+BINDEST=/home/k9/bots/sbin
+DATDEST=/home/k9/bots/data
 
 INSTALL=install -m 700
 CP_ALL=/bin/cp -dpr
-RUNGROUP=
+RUNGROUP=k9
