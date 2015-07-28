@@ -48,10 +48,10 @@ MORE_CFLAGS = -Wall -g
 ###########################################################################
 
 
-CFLAGS = -I/usr/local/include $(CDEFS) $(BASE_CFLAGS) $(MORE_CFLAGS)
+CFLAGS = -I/home/k9/bots $(CDEFS) $(BASE_CFLAGS) $(MORE_CFLAGS)
 
 # MYSQL libraries 
-MYSQLLIB = /usr/local/lib/mysql
+MYSQLLIB = /usr/lib/mysql
 
 LFLAGS = -L$(MYSQLLIB) -lmysqlclient
 
