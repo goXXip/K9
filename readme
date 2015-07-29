@@ -73,6 +73,8 @@ derivated).
 3. INSTALLATION
 ---------------
 
+sed -i -e "s/getline/get_line/" lang/langcomp.c
+
 See the INSTALL file.
 
 4. COMMAND LINE OPTIONS
