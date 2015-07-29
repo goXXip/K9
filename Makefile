@@ -93,7 +93,7 @@ install: $(PROGRAM) languages
 	ln "$(BINDEST)/k9" "$(BINDEST)/listnicks"
 	ln "$(BINDEST)/k9" "$(BINDEST)/listchans"
 	(cd lang ; $(MAKE) install)
-	@set -e ; if [ ! -d "$(DATDEST)/helpfiles" ] ; then \
+	@set -e ; if [ ! -d "$(DATDEST)/help" ] ; then \
 		echo '$(CP_ALL) data/* "$(DATDEST)"' ; \
 		$(CP_ALL) data/* "$(DATDEST)" ; \
 	else \
