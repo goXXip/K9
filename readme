@@ -1,17 +1,19 @@
 K9 -- a set of IRC services for IRC networks
 ===============================================
 
-K9 IRC Service by Thread (thread@techbench.net)
+K9 IRC Service by goXXip (admin@basgelsin.tk)
+		  Thread (thread@techbench.net)
 		  Vampire (vampire@iglou.com)
 		  MRX (tom@rooted.net)
                   sloth (sloth@nopninjas.com)
 
-Based on Services (c) 1996-1999 Andrew Church <achurch@dragonfire.net>.
+Based on K9 IRC Services (c) 1996-1999 Andrew Church <achurch@dragonfire.net>.
+
 
 This program is free but copyrighted software; see the file COPYING for
 details.
 
-Latest information about K9 may be found at thread@techbench.net
+Latest information about K9 may be found at admin@basgelsin.tk
 
 TABLE OF CONTENTS
 -----------------
@@ -35,6 +37,7 @@ The original credits:
 	<mikado@holyfire.com> -- Turkish translation
 	Andrew Kempe <theshadow@shadowfire.org> -- session limiting
 K9 credits:
+    goXXip <admin@basgelsin.tk> -- Re-Coded and compatible unrealircd
     CafeiN <oytuny@yahoo.com> -- Turkish translation
     Sylvain Cresto aka tost <scresto@netsante.fr> -- FreeBSD 5 patch
     Marcelo Conde Foscarini aka Bras <ircadmin@brmarket.net> -- Portuguese translation
@@ -54,11 +57,11 @@ administrators to manage their network with powerful tools.
 
 Currently available services are:
 
-  * NickServ, a powerful nickname manager that users can use to
+  * DogTag, a powerful nickname manager that users can use to
   protect themselves against nick stealing. Each user has its
   own nickname group, that allows him to register as many nicks as
   he needs while still being able to take profit of his privileges
-  and to modify his nick configuration. NickServ also has an optional 
+  and to modify his nick configuration. DogTag also has an optional 
   password retrieval feature.
 
   * K9, a powerful channel manager that helps users to administer
@@ -199,7 +202,7 @@ file; the Changes.lang file will help you to know which messages were
 added, modified or deleted.
 
 If you did a language file translation, and want to let others use it,
-please send it to linuxworm@turk.net (don't forget to mention clearly your
+please send it to admin@basgelsin.tk (don't forget to mention clearly your
 (nick)name, your e-mail and the language name). You'll of course get full
 credit for it, and will even get future final major releases before anyone 
 else to complete the translation!... ;) 
@@ -213,4 +216,4 @@ as precise as possible when asking a question, because I won't
 try to guess things (or ask you for them) if they aren't provided.
 
 * If you think you found a bug (AND ONLY FOR THIS PURPOSE), come on
-IRC (irc.chatnet.org port 6667) and try to catch me on channel #routing.
+IRC (irc.basgelsin.tk port 6667) and try to catch me on channel #dvbsat.
