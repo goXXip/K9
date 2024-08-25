@@ -52,7 +52,7 @@ int check_pings(void)
         if(next_ping<=curtim)
         {
                 gettimeofday(&ping_sendt,NULL);
-                send_cmd(ServerName, "WHOIS services.basgelsin.tk :TIMETEST_%ld",ping_sendt.tv_sec);
+                send_cmd(ServerName, "WHOIS cservice.basgelsin.net :TIMETEST_%ld",ping_sendt.tv_sec);
                 return 0;
         }
         else     
