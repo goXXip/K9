@@ -236,7 +236,7 @@ static void k9_unschan(User *u);
 static void k9_status(User *u);
 /* NEW */
 
-/* static void k9_say(User *u); */
+static void k9_say(User *u); 
 static void k9_act(User *u);
 static void k9_snd(User *u);
 static void k9_kick(User *u);
@@ -251,9 +251,9 @@ static void k9_banlist(User *u);
 static void k9_version(User *u);
 static void k9_adduser(User *u);
 static void k9_remuser(User *u);
-/* static void k9_moduser(User *u); */
+static void k9_moduser(User *u); 
 static void k9_broadcast(User *u);
-/* static void k9_mode(User *u); */
+static void k9_mode(User *u); 
 static void k9_save(User *u);
 static void k9_update(User *u);
 static void k9_join(User *u);
@@ -303,9 +303,7 @@ static Command cmds[] = {
     {"DEVOICE",		k9_devoice,		NULL,	100,	-1,	-1,-1},
     {"TOPIC",		k9_topic,		NULL,	200,	-1,	-1,-1},
     {"AUTOOP",		k9_autoop,		NULL,	400,	-1,	-1,-1},
-/*
     {"MODE",		k9_mode,		NULL,	400,	-1,	-1,-1},
-*/
     {"ADDUSER",		k9_adduser,		NULL,	400,	-1,	-1,-1},
     {"MODUSER",		k9_adduser,		NULL,	400,	-1,	-1,-1},        
     {"REMUSER",		k9_remuser,		NULL,	400,	-1,	-1,-1},
@@ -317,8 +315,7 @@ static Command cmds[] = {
  /* {"IDENTIFY",	k9_auth,		NULL,	450,	-1,	-1,-1}, */
     {"ACT",		k9_act,			NULL,	500,	-1,	-1,-1},
     {"AUTH",		k9_auth,		NULL,	500,	-1,	-1,-1},
-/*    {"SAY",		k9_say,			NULL,	500,	-1,	-1,-1},
-*/
+    {"SAY",		k9_say,			NULL,	500,	-1,	-1,-1},
     {"SND",		k9_snd,			NULL,	500,	-1,	-1,-1},
     {"SETPASS",		k9_setpass,		NULL,	500,	-1,	-1,-1},
     {"SUCCESSOR",	k9_successor,		NULL,	500,	-1,	-1,-1},
@@ -5105,7 +5102,6 @@ static void k9_diedie(User *u)
 															      
 /*************************************************************************/
 
-#ifdef DISABLED
 static void k9_say(User *u)
 {
 	char *chan = strtok(NULL, " ");
@@ -5137,7 +5133,7 @@ static void k9_say(User *u)
 	notice_lang(s_ChanServ, u, CHAN_OP_SUCCEEDED);
     }
 }
-#endif
+
 
 /*************************************************************************/
 
@@ -5389,7 +5385,6 @@ int isnum(char *num)
     return TRUE;
 }
 
-#ifdef DISABLED
 static void k9_mode(User *u)
 {
     char *chan = strtok(NULL, " ");     /* channel info */
@@ -5590,7 +5585,7 @@ static void k9_mode(User *u)
  
     return;  
 }
-#endif
+
 
 /*************************************************************************/
 
@@ -6667,7 +6662,7 @@ static void k9_adduser(User *u)
 
 /*************************************************************************/
 
-#ifdef DISABLED
+
 static void k9_moduser(User *u)
 {
 	char *chan = strtok(NULL, " ");
@@ -6786,7 +6781,7 @@ static void k9_moduser(User *u)
 		break;
 	}
 }
-#endif
+
 				
 /*************************************************************************/
 
@@ -6951,14 +6946,14 @@ static void k9_version(User *u)
                } Credits;
 
                Credits line[] = {
-                                { "Chatnet K9 Channel Services" 		}, {" "},
+                                { "Basgelsin K9 Channel Services" 		}, {" "},
                                 { "ChatNet modifications (c) 2001-2002"		}, {" "},
-				{ "E-mail: routing@lists.chatnet.org"		},
+                                { "Basgelsin modifications (c) 2024"		}, {" "},
+				{ "E-mail: routing@basgelsin.net"		},
 				{ "Authors:"					}, {" "},
-				{ "MRX     (mrx@rooted.net)"			}, 
-				{ "sloth   (sloth@nopninjas.com)"		},
-				{ "Vampire (vampire@iglou.com)"			}, 
-				{ "Thread  (thread@techbench.net)"		},
+				{ "goXXip    (admin@basgelsin.net)"		}, 
+				{ "tonytr    (admin@dvbsat.org)"		},
+				{ "DeSPeRaDo (desperado@basgelsin.net)"		}, {" "},
 				{ NULL       },
                                 };
 
