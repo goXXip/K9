@@ -550,7 +550,7 @@ while [ $ok -eq 0 ] ; do
 			ok=1
 			;;
 		*)
-			echo 'Please enter "yes" or "no".'
+			echo 'Please enter yes or no'
 			;;
 	esac
 done
@@ -588,7 +588,7 @@ EOT
 				ok=1
 				;;
 			*)
-				echo 'Please enter "yes" or "no".'
+				echo 'Please enter yes or no'
 				;;
 		esac
 	done
@@ -627,7 +627,7 @@ while [ $ok -eq 0 ] ; do
 			ok=1
 			;;
 		*)
-			echo 'Please enter "yes" or "no".'
+			echo 'Please enter yes or no'
 			;;
 	esac
 done
