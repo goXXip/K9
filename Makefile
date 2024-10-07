@@ -51,7 +51,7 @@ MORE_CFLAGS = -Wall -g
 CFLAGS = -I/home/k9/bots $(CDEFS) $(BASE_CFLAGS) $(MORE_CFLAGS)
 
 # MYSQL libraries 
-MYSQLLIB = /usr/lib/mysql
+MYSQLLIB = /usr/lib64/mysql
 
 LFLAGS = -L$(MYSQLLIB) -lmysqlclient
 
