@@ -64,7 +64,7 @@ char inbuf[BUFSIZE];
 int servsock = -1;
 
 /* Should we update the databases now? */
-int save_data = 0;
+int save_data = 1;
 
 /* At what time were we started? */
 time_t start_time;
